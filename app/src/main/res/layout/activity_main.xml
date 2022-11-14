@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="384dp"
+            android:layout_height="384dp"
+            android:src="@drawable/me"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="Hamed Abdi"
+            android:textSize="64dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Maniacal, Manipulative, Psychotic"
+            android:textSize="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="The storm had felt like a rumor all day, but now, the sky was delivering. For a second, like a knife catching a glint of light and refracting it in multitude, everything gleamed white. The lightning split the whole sky in half, and in that moment, it was brighter than daylight. The tops of the gravestones seemed to pulse like strobe lights in a night club before blackness settled them down again.She was kneeling in front of her sister’s grave. She came here often—after all, that’s what a mourning sister did—but she felt ..."
+            android:textSize="32dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title1" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="SOUTHBOUND"
+            android:textSize="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body1" />
+
+        <TextView
+            android:id="@+id/body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="M. SweetDoralea looked out the window of the southbound train. Mid-October leaves dappled the Kentucky hillsides in fiery oranges and burning reds, dull yellows and rusty browns with a few evergreens peaking through the canopies. Colors were made even more vivid by the morning sun and clear, blue sky. Flaxen sedge grass along with green tangles of weeds, brambles, and even a few autumn flowers blurred together as she shifted her gaze downward toward the edges of fields and fence rows ..."
+            android:textSize="32dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title2" />
+
+        <TextView
+
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Adelaide's Cemetery"
+            android:textSize="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body2" />
+
+        <TextView
+            android:id="@+id/body3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Death was accompanied by the patter of nurses’ rubber-soled shoes marching briskly along linoleum floors. The smell of antiseptic solution. A gurney wheel, in need of oil, squeaking rhythmically as another patient was rushed past. Starchy white sheets, and the sharp and angular shapes of nurses headdresses.  My body revolted against the crisp order in violent expulsions of browns, greens, and yellows ..."
+            android:textSize="32dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title3" />
+
+        <Button
+            android:id="@+id/buttonCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="32dp"
+            android:onClick="openCall"
+            android:text="Call Me"
+            android:textSize="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
